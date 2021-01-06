@@ -1,0 +1,11 @@
+{
+  "name": "modern-portfolio",
+  "version": "1.0.0",
+  "description": "sebuah website portfolio modern yang berisi berbagai project yang telah diselesaikan",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/style.scss dist/css/style.css"
+  },
+  "author": "adam daffa",
+  "license": "MIT"
+}

@@ -1,0 +1,53 @@
+// mobile device
+
+@include mediaSm {
+  main#home h1 {
+    margin-top: 10vh;
+  }
+}
+
+// tablet device 
+@include mediaMd{
+  main {
+    align-items: center;
+    text-align: center;
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+ 
+ ul.menu-nav,div.menu-branding {
+   float: none;
+   width: 100%;
+   min-height: 0;
+   
+   &.show {
+     transform: translate3d(0,0,0);
+   }
+ }
+ 
+ .menu-nav {
+   transform: translate3d(-100%,0,0);
+   font-size: 24px;
+   height: 75vh;
+ }
+ .menu-branding {
+   transform: translate3d(100%,0,0);
+   height: 25vh;
+   .potrait {
+     height: 150px;
+     width: 150px;
+   }
+ }
+}
+
+// laptop & desktop device
+@include mediaLg{
+  
+}
+
+// wide screen
+@include mediaXl{
+  
+}

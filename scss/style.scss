@@ -1,6 +1,6 @@
 @import 'config';
 @import 'menu';
-
+@import 'mobile';
 *{
   box-sizing: border-box;
 }
@@ -11,6 +11,7 @@ body {
   height: 100%;
   font-family: 'Segoe UI', 'Tahoma', Geneva,verdana,Sans-Serif ;
   line-height: 1.5;
+  overflow: hidden;
 }
 
 h1,h2,h3 {
@@ -28,7 +29,6 @@ h1,h2,h3 {
 a {
   color: #fff;
   text-decoration: none;
-  
 }
 header {
   position: fixed;
@@ -38,13 +38,11 @@ header {
 .text-secondary {
   color: $secondary-color;
 }
-
 .main {
   padding: 4rem;
   height: 100%;
   .icons {
     margin-top: 1rem;
-    
     a {
       padding: 0.4rem;
       
@@ -54,7 +52,6 @@ header {
       }
     }
   }
-  
   &#home {
     overflow: hidden;
     h1 {

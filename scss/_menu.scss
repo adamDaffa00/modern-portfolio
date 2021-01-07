@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
    &.close {
@@ -97,7 +97,7 @@
     font-size: 30px;
     font-weight: 300;
     @include easeOut;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
     text-transform: uppercase;
     position: relative;

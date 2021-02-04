@@ -1,8 +1,10 @@
 // mobile device
 
 @include mediaSm {
-  main#home h1 {
-    margin-top: 10vh;
+  .boxes{
+    div {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -13,6 +15,7 @@
     text-align: center;
     .lg-heading {
       line-height: 1;
+      font-size: 4rem;
       margin-bottom: 1rem;
     }
   }
@@ -49,15 +52,23 @@
   'job3';
   grid-template-columns: 1fr;
   }
-  
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
 }
 
 // laptop & desktop device
 @include mediaLg{
-  
+  .projects {
+    grid-template-columns: repeat(3,1fr);
+  }
+
 }
 
 // wide screen
 @include mediaXl{
-  
+  .projects {
+    grid-template-columns: repeat(4,1fr);
+  }
 }

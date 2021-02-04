@@ -37,7 +37,6 @@ header {
   color: $secondary-color;
 }
 
-
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px);
@@ -91,6 +90,68 @@ main {
     background: lighten($primary-color,5);
     padding: 0.5rem;
     border-bottom: $primary-color solid 5px;
+  }
+}
+
+
+
+.projects {
+  display: grid;
+  padding: 20px;
+  gap: .7rem;
+  grid-template-columns: repeat(3,1fr);
+  img {
+    width: 100%;
+    border: 3px solid #fff;
+    &:hover {
+      @include easeOut;
+      opacity: .5;
+      border-color: $secondary-color;
+    }
+  }
+}
+.btn {
+  padding: 0.5rem 1rem;
+  display: block;
+  border: 0;
+  margin-bottom: 0.3rem;
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($primary-color);
+  }
+}
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color,50);
+  color: #fff;
+}
+.btn-light {
+  @extend .btn;
+  color: #333;
+  background: lighten($primary-color,50) ;
+}
+
+
+.boxes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  align-items: center;
+  div {
+    font-size: 2rem;
+    border: 3px solid #fff;
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+    @include easeOut;
+    &:hover {
+      padding: .5rem 1rem;
+      background-color: $secondary-color;
+      color: #000;
+      span {
+       color: #000;
+      }
+    }
   }
 }
 
